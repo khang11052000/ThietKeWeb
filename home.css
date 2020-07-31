@@ -1,0 +1,306 @@
+* {
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.chen{
+	background-color: rgba(46, 204, 149, 0);
+}
+
+#header {
+    background-color: #6e987e;
+    width: auto;
+    height: 80px;
+}
+
+#header img {
+    width: 200px;
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    background-color: #6e987e;
+}
+
+#header input[type="text"] {
+    border-radius: 30px;
+    box-sizing: border-box;
+    width: 320px;
+    outline: none;
+    padding: 11px;
+    position: absolute;
+    left: 322px;
+    top: 27px;
+}
+
+.icon {
+    position: absolute;
+    left: 600px;
+    top: 41px;
+    cursor: pointer;
+}
+
+#icon2 {
+    background-color: #6e987e;
+    float: left;
+    position: absolute;
+    left: 1300px;
+    float: left;
+    padding-top: 35px;
+    z-index: 10;
+}
+
+#menu ul {
+    list-style-type: none;
+    background: #6e987e;
+    text-align: center;
+    padding-right: 50px;
+    position: absolute;
+    right: 200px;
+    font-size: 17px;
+    top: 5px;
+}
+
+#menu ul li {
+    color: #ffffff;
+    display: inline-table;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+
+#menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    background: #6e987e;
+    text-align: center;
+}
+
+#menu ul li a:hover {
+    color: #704a40;
+}
+
+
+/*#menu ul li > .sub-menu
+{
+	display: none ;
+	position: absolute ;
+	text-align: center ;
+}
+
+#menu ul li:hover .sub-menu
+{
+	display: block ;
+}*/
+
+.dropbtn {
+    padding: 17px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    background-color: #6e987e;
+    color: white;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #6e987e;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    color: #161515;
+    text-decoration: none;
+    display: block;
+    padding: 12px 16px;
+    background-color: #ffffff;
+}
+
+.dropdown-content a:hover {
+    background-color: #CDEBDC;
+    color: #704a40;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #6e987e;
+    color: #704a40;
+}
+
+#banner {
+    background-image: url("img/99368934_571442303809104_3903676340607385600_n.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: auto;
+    height: 3000px;
+}
+
+
+/* Slide Show */
+
+.slide {
+    height: 700px;
+}
+
+.img-slide {
+    width: 97.85vw;
+    position: absolute;
+    z-index: 3;
+    animation: slideshow 12s linear 0s infinite;
+}
+
+.img-slide:nth-child(2) {
+    z-index: 2;
+    animation-delay: 4s;
+}
+
+.img-slide:nth-child(3) {
+    z-index: 1;
+    animation-delay: 8s;
+}
+
+@keyframes slideshow {
+    25% {
+        opacity: 1;
+    }
+    33.33% {
+        opacity: 0;
+    }
+    91.66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#content {
+    background-color: #6e987e;
+    width: auto;
+    height: 1845px;
+}
+
+section {
+    text-align: center;
+}
+
+article {
+    width: 25%;
+    float: left;
+    padding: 20px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+article img:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+#UT li {
+    background: #6e987e;
+    float: left;
+    padding: 20px 70px;
+    padding-left: 95px;
+    font-size: 18px;
+    list-style: none;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+}
+
+section:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#hotro {
+    background-color: #6e987e;
+    width: auto;
+    height: 1073px;
+}
+
+#hotro section {
+    text-align: center;
+}
+
+#hotro article {
+    width: 33.333333333333333%;
+    float: left;
+    padding: 20px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
+#footer {
+	height: 330px;
+	background: #6e987e;
+	text-align: center;
+}
+
+table,tr, td{
+	background: #6e987e;	
+}
+tr{
+	text-align: center;	
+}
+
+.fi{
+	text-align: left;	
+}
+td{
+	padding: 10px;
+	text-align: left;
+}
+ 
+#footer h1{
+	padding-top:5px;
+}
+
+.img{
+	text-align: center;
+}
+.search {
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    #header {
+        width: 100%;
+    }
+    article {
+        width: 100%;
+    }
+    #hotro article {
+        width: 100%;
+    }
+    #UT li {
+        width: 100%;
+    }
+    #footer {
+        width: 100%;
+    }
+    #finish {
+        width: 100%;
+    }
+    #hasaki {
+        width: 100%;
+    }
+}
+
